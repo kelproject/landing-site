@@ -1,17 +1,16 @@
 import os
 
+import dj_database_url
+
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = PACKAGE_ROOT
 
-DEBUG = True
+DEBUG = False
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "dev.db",
-    }
+    "default": dj_database_url.config(default="postgres://localhost/yourdb")
 }
 
 ALLOWED_HOSTS = []

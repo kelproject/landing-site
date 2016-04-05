@@ -7,10 +7,10 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = PACKAGE_ROOT
 
-DEBUG = False
+DEBUG = True
 
 DATABASES = {
-    "default": dj_database_url.config(default="postgres://localhost/yourdb")
+    "default": dj_database_url.config(default="postgres://localhost/kel-landing-site")
 }
 
 ALLOWED_HOSTS = [

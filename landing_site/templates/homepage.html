@@ -12,9 +12,17 @@
     <div class="site-wrapper-inner">
         <div class="cover-container">
             <div class="inner cover">
-                <h1 class="cover-heading">Sign up on our waiting list!</h1>
+                <h1 class="cover-heading">Kel, an open source PaaS built on&nbsp;Kubernetes</h1>
                 <p class="lead">
-                    Once this site is ready to launch, you will be emailed.
+                    Since 2011, Eldarion has run Gondor, one of the leading platforms as a service for Django and Python.
+                    We've rebuilt it on Kubernetes to greatly expand our scalability and the technology supported,
+                    and to enable private cloud and on-premises hosting.
+                </p>
+                <p class="lead">
+                    <b>Now, we're open sourcing it.</b>
+                </p>
+                <p class="lead">
+                    If you'd like to find out when we launch the open source project, enter your email address below. We won't use it for any other purpose.
                 </p>
                 {% url "waitinglist_list_signup" as url %}
                 <form method="POST" action="{{ url }}" class="form-inline">

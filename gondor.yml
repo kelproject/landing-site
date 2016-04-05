@@ -1,0 +1,6 @@
+site: kel/kelproject.com
+branches:
+  master: primary
+deploy:
+  services:
+    - web

@@ -169,3 +169,5 @@ FIXTURE_DIRS = [
 ]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+THEME_CONTACT_EMAIL = "kel@eldarion.com"

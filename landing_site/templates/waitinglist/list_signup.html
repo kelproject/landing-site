@@ -24,6 +24,9 @@
                 <p class="lead">
                     If you&rsquo;d like to find out when we launch the open source project, enter your email address below. We won't use it for any other purpose.
                 </p>
+                {% if form.email.errors %}
+                    <b>{{ form.email.errors.0 }}</b>
+                {% endif %}
                 {% url "waitinglist_list_signup" as url %}
                 <form method="POST" action="{{ url }}" class="form-inline">
                     {% csrf_token %}

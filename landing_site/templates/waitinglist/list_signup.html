@@ -28,7 +28,7 @@
                     <b>{{ form.email.errors.0 }}</b>
                 {% endif %}
                 {% url "waitinglist_list_signup" as url %}
-                <form method="POST" action="{{ url }}" class="form-inline">
+                <form method="POST" action="{{ url }}" class="form-inline" style="margin-bottom: 20px;">
                     {% csrf_token %}
                     <div class="form-group">
                         <label class="sr-only" for="id_email">Email address</label>

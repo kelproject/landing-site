@@ -118,6 +118,7 @@ WSGI_APPLICATION = "landing_site.wsgi.application"
 
 INSTALLED_APPS = [
     "django.contrib.auth",
+    "django.contrib.admin",
     "django.contrib.contenttypes",
     "django.contrib.messages",
     "django.contrib.sessions",

@@ -131,6 +131,7 @@ INSTALLED_APPS = [
 
     # pinax
     "pinax.waitinglist",
+    "pinax.webanalytics",
 
     # project
     "landing_site",
@@ -172,3 +173,12 @@ FIXTURE_DIRS = [
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 THEME_CONTACT_EMAIL = "kel@eldarion.com"
+
+PINAX_WEBANALYTICS_SETTINGS = {
+    "google": {
+        2: "UA-2401894-51"
+    },
+    "gauges": {
+        2: "57129ec7c88d904f1b00ff21"
+    }
+}

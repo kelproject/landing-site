@@ -2,6 +2,7 @@
 
 {% load staticfiles %}
 {% load i18n %}
+{% load pinax_webanalytics_tags %}
 
 
 {# remove to bring back topbar #}
@@ -24,6 +25,7 @@
 
 
 {% block scripts %}
+    {% analytics %}
     {% include "_scripts.html" %}
 {% endblock %}
 
